@@ -1,0 +1,67 @@
+.container {
+  width: 100%;
+  max-width: 46rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 4rem;
+  margin: 0 auto;
+  position: relative;
+  top: -27px;
+  padding: 0 1rem;
+}
+
+.form {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.newTodoInputText {
+  width: 100%;
+  max-width: 39.875rem;
+  padding: 1rem;
+  background-color: var(--gray-500);
+  outline: none;
+  border: none;
+  box-shadow: 0 0 0 1px var(--gray-700);
+  color: var(--gray-100);
+  border-radius: 8px;
+  transition: box-shadow 0.2s;
+}
+
+.newTodoInputText::placeholder {
+  color: var(--gray-300);
+}
+
+.newTodoInputText:focus {
+  box-shadow: 0 0 0 1px var(--purple-dark);
+}
+
+.submitButton {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--gray-100);
+  background: var(--blue-dark);
+  transition: background 0.175s;
+  font-size: 87.5%;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.submitButton:disabled {
+  cursor: not-allowed;
+}
+
+.submitButton:not(:disabled):hover {
+  background: var(--blue);
+}

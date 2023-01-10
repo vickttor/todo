@@ -1,0 +1,109 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.message {
+  width: 100%;
+  padding: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+  border-top: 2px solid var(--gray-400);
+  outline: none;
+  border-radius: 8px;
+  margin: 0 auto;
+}
+
+.message strong {
+  display: block;
+}
+
+.summary {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.summary strong {
+  font-size: 87.5%;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
+}
+
+.summary strong:first-child {
+  color: var(--blue);
+}
+
+.summary strong:last-child {
+  color: var(--purple);
+}
+
+.todoContainer {
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--gray-500);
+  color: var(--gray-100);
+  border-radius: 8px;
+  box-shadow: 0 0 0 1px var(--gray-400);
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 0.75rem;
+  padding-right: 50px;
+  position: relative;
+}
+
+.todoContainer + .todoContainer {
+  margin-top: 0.75rem;
+}
+
+.todoContent {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 0.75rem;
+}
+
+.label {
+  word-break: break-all;
+}
+
+.deleteButton {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+
+  color: var(--gray-300);
+  border: none;
+  background: transparent;
+  outline: none;
+
+  border-radius: 8px;
+  cursor: pointer;
+  line-height: 0;
+}
+
+.deleteButton:focus {
+  outline: 1px solid var(--purple);
+}
+
+.deleteButton:hover {
+  background: var(--gray-400);
+  color: var(--danger);
+}
