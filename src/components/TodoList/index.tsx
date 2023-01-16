@@ -56,7 +56,7 @@ export function TodoList({
                     handleToggle(todo.id, isChecked);
                   }}
                 />
-                <label className={styles.label}>{todo.label}</label>
+                <label className={todo.isCompleted ? styles.labelDashed : styles.label}>{todo.label}</label>
               </div>
 
               <button

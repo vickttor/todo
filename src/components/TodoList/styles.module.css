@@ -80,7 +80,13 @@
 }
 
 .label {
-  word-break: break-all;
+  line-break: anywhere;
+}
+
+.labelDashed {
+  line-break: anywhere;
+  text-decoration-line: line-through;
+  color: var(--gray-300);
 }
 
 .deleteButton {
